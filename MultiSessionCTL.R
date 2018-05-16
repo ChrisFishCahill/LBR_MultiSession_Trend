@@ -15,6 +15,7 @@
 #and follow the instructions to configure stan on your computer before running script.
 #Make sure this includes the "optional configuration" re: the Makevars file to get this
 #running with rstan 2.17.4
+#If you don't you'll likely get incomprehensible error messages and crash R unexpectedly
 #----------------------------------------------------------------------------------#
 
 #Set your local directory--'trend.stan' must be saved to this directory
