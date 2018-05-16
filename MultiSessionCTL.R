@@ -74,7 +74,7 @@ options(mc.cores = parallel::detectCores())
 
 #Stan run parameters:
 km = c( rep(4.32, 4), 4.22, 4.47, 4.51 ) #distances in km of river e-fished
-data <- list(M=M, J=J, nyear=G, y_array=CapHistArray, X = 1:7, km=km) 
+data <- list(M = M, J = J, nyear = G, y_array = CapHistArray, X = 1:7, km = km) 
 trend_pars=c("beta0", "beta1", "G_N", "mean_p") #can also monitor "psi" "G_N_km" "sigma"
 
 #Stan run parameters:
