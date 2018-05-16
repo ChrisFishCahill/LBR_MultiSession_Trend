@@ -7,7 +7,7 @@
 *available at: https://github.com/stan-dev/example-models/tree/master/BPA
 */
 data {            
-  int<lower=0> M; //Number of rows in augmented datasets
+  int<lower=0> M; //number of rows in augmented datasets
   int<lower=0> J; //number of capture occassions 
   int<lower=0> nyear; //number of sessions
   int<lower=0, upper=1> y_array[M, J, nyear]; //3d capture history array
