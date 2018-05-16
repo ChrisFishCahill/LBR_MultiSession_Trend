@@ -84,11 +84,11 @@ chains <- 4 #Should be fine for most laptops
 
 if(FALSE){
      #Takes 45 minutes to run 1000 iterations on CLC's desktop  --> Okay results
-	   #Takes 3.2 hours to run 10,000 iterations on CLC's desktop --> Best results
-	         fit = stan(file = "trend.stan", model_name = "Trend", 
-                            data = data, iter = iter, thin = thin, chains = chains,
-	                    warmup = floor(iter/2), seed = 1,
-                            verbose = T, pars=trend_pars)
+     #Takes 3.2 hours to run 10,000 iterations on CLC's desktop --> Best results
+     fit = stan(file = "trend.stan", model_name = "Trend", 
+                data = data, iter = iter, thin = thin, chains = chains,
+	        warmup = floor(iter/2), seed = 1,
+                verbose = T, pars=trend_pars)
 }
 
 #Step 4: Ensure model is behaving and inspect results:
