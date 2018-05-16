@@ -2,7 +2,7 @@
 #MultiSession Control file as per Cahill et al. Lower Bow River Rainbow Trout CJFAS#
 #Script simulates multisession data, and then calls stan to analyze trend#
 #See also Kery and Royle 2016 (Applied Hierarchical Modeling), or
-#Royle et al. 2014 (Spatial Capture-Recapture) for Winbugs Examples
+#Royle et al. 2014 (Spatial Capture-Recapture) for BUGS Examples
 
 #Run using R version 3.5.0 (2018-04-23) -- "Joy in Playing" &
 #rstanarm (Version 2.17.4, packaged: 2018-04-13 01:51:52 UTC)
