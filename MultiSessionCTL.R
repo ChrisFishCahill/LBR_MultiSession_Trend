@@ -1,6 +1,6 @@
 #----------------------------------------------------------------------------------#
-#MultiSession Control file as per Cahill et al. Lower Bow River Rainbow Trout CJFAS#
-#Script simulates multisession data, and then calls stan to analyze trend#
+#Multi-session Control file as per Cahill et al. Lower Bow River Rainbow Trout CJFAS#
+#Script simulates multi-session data, and then calls stan to analyze trend#
 #See also Kery and Royle 2016 (Applied Hierarchical Modeling), or
 #Royle et al. 2014 (Spatial Capture-Recapture) for BUGS Examples
 
@@ -9,10 +9,13 @@
 #Coded by Chris Cahill 16 May 2018#
 #Contact: christopher.cahill@ucalgary.ca
 
-#NOTE!!!
-#If stan has never been installed on your machine or you've updated versions, visit 
-#https://github.com/stan-dev/rstan/wiki/Installing-RStan-on-Windows
+#PLEASE NOTE!!!
+#If stan has never been installed on your machine or you've had to update the 
+#version of stan visit https://github.com/stan-dev/rstan/wiki/Installing-RStan-on-Windows
 #and follow the instructions to configure stan on your computer before running script
+
+#Similarly, I had to update makeVars file as per last URL, restart R, and run script
+#to get this running with the rstan 2.17.4
 #----------------------------------------------------------------------------------#
 #Set your local directory--'trend.stan' must be saved to this directory
 setwd("C:/Users/Chris Cahill/Documents/GitHub/Bayesian-Mark-Recapture-Models/SubmissionRuns/Revision Code")
