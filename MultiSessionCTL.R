@@ -12,7 +12,7 @@
 #Set your local directory--'trend.stan' must be saved to this directory
 setwd("C:/Users/Chris Cahill/Documents/GitHub/Bayesian-Mark-Recapture-Models/SubmissionRuns/Revision Code")
 
-#Step one: Simulate Multi-Session Lambdas & N's with a trend:
+#Step 1: Simulate Multi-Session Lambdas & N's with a trend:
 set.seed(7335)
 G         <-  7 #Number of groups or sessions
 Years     <-  1:G 
@@ -86,9 +86,9 @@ if(FALSE){
      #Takes 45 minutes to run 1000 iterations on CLC's desktop  --> Okay results
 	   #Takes 3.2 hours to run 10,000 iterations on CLC's desktop --> Best results
 	         fit = stan(file = "trend.stan", model_name = "Trend", 
-                      data = data, iter = iter, thin = thin, chains = chains,
+                            data = data, iter = iter, thin = thin, chains = chains,
 	                    warmup = floor(iter/2), seed = 1,
-                      verbose = T, pars=trend_pars)
+                            verbose = T, pars=trend_pars)
 }
 
 #Step 4: Ensure model is behaving and inspect results:
