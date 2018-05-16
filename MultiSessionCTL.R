@@ -8,6 +8,11 @@
 #rstanarm (Version 2.17.4, packaged: 2018-04-13 01:51:52 UTC)
 #Coded by Chris Cahill 16 May 2018#
 #Contact: christopher.cahill@ucalgary.ca
+
+#NOTE!!!
+#If stan has never been installed on your machine or you've updated versions, visit 
+#https://github.com/stan-dev/rstan/wiki/Installing-RStan-on-Windows
+#and follow the instructions to configure stan on your computer before running script
 #----------------------------------------------------------------------------------#
 #Set your local directory--'trend.stan' must be saved to this directory
 setwd("C:/Users/Chris Cahill/Documents/GitHub/Bayesian-Mark-Recapture-Models/SubmissionRuns/Revision Code")
@@ -59,7 +64,7 @@ for(i in 1:length(N)){
 
 #------------------------------------------------------------------------------------------#
 #Step 3: Load packages, set up data, and parameters to monitor, and then call Stan:
-#See also: https://github.com/stan-dev/rstan/wiki/Installing-RStan-on-Windows
+#------------------------------------------------------------------------------------------#
 
 list.of.packages <- c("shinystan", "arm", "rstan", "rstanarm")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
