@@ -47,7 +47,7 @@ GetCapHist <- function(N=2000, J=4, mean.p=0.3, time.effects=rep(0, J), sd=1.25)
   	     eps=eps, C=C, J=J, yfull=yfull, yobs=yobs))
 }
 
-M            <- 2000 #Data augmentation variable: used 8K in the paper
+M            <- 2000 #Data augmentation variable
 CapHistArray <- array(NA, dim=c(M, J, G))
 
 #Simulate and augmented capture history data:
