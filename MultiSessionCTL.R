@@ -50,7 +50,7 @@ GetCapHist <- function(N=2000, J=4, mean.p=0.3, time.effects=rep(0, J), sd=1.25)
 M            <- 2000 #Data augmentation variable
 CapHistArray <- array(NA, dim=c(M, J, G))
 
-#Simulate and augmented capture history data:
+#Simulate and augment capture history data:
 for(i in 1:length(N)){
 	SimData <- GetCapHist(N=N[i])$yobs
 	CapHistArray[1:M ,1:J , i] <- 
