@@ -12,7 +12,7 @@ data {
   int<lower=0> nyear; //number of sessions
   int<lower=0, upper=1> y_array[M, J, nyear]; //3d capture history array
   real X[nyear]; //year  
-  real km[nyear];  //length of stretch fished (unstandardized)  
+  real km[nyear];  //length of stretch fished 
 }
 transformed data {
   int<lower=0> s[nyear,M];  // totals in each row
