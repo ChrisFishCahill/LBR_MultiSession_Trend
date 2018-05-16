@@ -30,8 +30,8 @@ transformed data {
 }
 parameters {
   matrix<lower=0, upper=1>[nyear,J] mean_p; //detection probs
-  real<lower=0> beta0; //for independent N's per year
-  real beta1; //trend slope
+  real<lower=0> beta0; 
+  real beta1; 
   vector<lower=0>[nyear] sigma; //weakly informative prior 
   vector [M] sigma_raw[nyear]; //non-centering terms
 }
