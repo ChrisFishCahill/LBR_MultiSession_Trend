@@ -81,9 +81,9 @@ model {
   }
 }
 generated quantities {
-  //Group N, Group N/km, and trends as derived quantities:
-  int G_N[nyear];  
-  vector[nyear] G_N_km; //Abundance  / Distance electro-fished
+  //derived quantities:
+  int G_N[nyear];  //Group or Session N
+  vector[nyear] G_N_km; // N / Distance electro-fished
   int<lower=0, upper=1> z_matrix[nyear,M]; 
 
   for(i in 1:nyear){
