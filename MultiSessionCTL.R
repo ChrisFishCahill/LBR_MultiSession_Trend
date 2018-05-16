@@ -98,7 +98,7 @@ sampler_params <- get_sampler_params(fit, inc_warmup = FALSE)
 divergent <- sapply(sampler_params, function(x) max(x[, "divergent__"]))
 
 if(any(divergent == 1)){message("Model has divergent transitions and results should not be trusted!")}
-if(any(summary(fit)$summary[,"Rhat"] > 1.1)){message("Chains may not have converged to a common distribution--Gelman-Rubin Statistics > 1.1")}
+if(any(summary(fit)$summary[,"Rhat"] > 1.1)){message("Chains may not have converged to a common distribution--Gelman-Rubin Stat > 1.1!")}
 
 #Inspect results and compare to values used in simulation:
 fit
