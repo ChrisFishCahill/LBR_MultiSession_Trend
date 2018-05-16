@@ -75,7 +75,7 @@ options(mc.cores = parallel::detectCores())
 #Stan run parameters:
 km = c( rep(4.32, 4), 4.22, 4.47, 4.51 ) #distances in km of river e-fished
 data <- list(M=M, J=J, nyear=G, y_array=CapHistArray, X = 1:7, km=km) 
-trend_pars=c("beta0", "beta1", "G_N", "mean_p", "sigma") #can also monitor "psi" "G_N_km"
+trend_pars=c("beta0", "beta1", "G_N", "mean_p") #can also monitor "psi" "G_N_km" "sigma"
 
 #Stan run parameters:
 iter   <- 1000 
@@ -93,7 +93,7 @@ if(FALSE){
 
 #Step 4: Ensure model is behaving and inspect results:
 
-#Ensure there are no divergent transitions
+#Ensure there are no divergent transitions & Rhat < 1.1
 sampler_params <- get_sampler_params(fit, inc_warmup = FALSE)
 divergent <- sapply(sampler_params, function(x) max(x[, "divergent__"]))
 
