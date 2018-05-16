@@ -11,7 +11,7 @@ data {
   int<lower=0> J; //number of capture occassions 
   int<lower=0> nyear; //number of sessions
   int<lower=0, upper=1> y_array[M, J, nyear]; //3d capture history array
-  real X[nyear]; //year for regresion 
+  real X[nyear]; //year  
   real km[nyear];  //length of stretch fished (unstandardized)  
 }
 transformed data {
