@@ -18,7 +18,7 @@ G         <-  7 #Number of groups or sessions
 Years     <-  1:G 
 beta0     <-  5.5 #Intercept
 beta1     <- -0.5 #Trend term
-J         <-  4 #number of ocassions for cap-recap each year
+J         <-  4 #Number of ocassions for cap-recap each year
 
 #Generate lambdas and simulate abundances:
 lambdas   <- exp( beta0 + beta1*(Years - Years[4]) )
@@ -28,7 +28,7 @@ N
 #Step 2: Generate capture histories based on N's:
 
 #Use the N's to simulate observed data from model Mth
-#This Function is adapted from code in Kery and Schaub 2011 p.154
+#This function is adapted from code in Kery and Schaub 2011 p.154
 GetCapHist <- function(N=2000, J=4, mean.p=0.3, time.effects=rep(0, J), sd=1.25){
 	yfull <- yobs <- p <- array(NA, dim=c(N, J))
 	mean.lp <- log(mean.p/(1-mean.p)) 
