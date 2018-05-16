@@ -13,10 +13,12 @@
 #If stan has never been installed on your machine or you've had to update the 
 #version of stan visit https://github.com/stan-dev/rstan/wiki/Installing-RStan-on-Windows
 #and follow the instructions to configure stan on your computer before running script
+#including the "optional configuration" re: the Makevars file
 
-#Similarly, I had to update makeVars file as per last URL, restart R, and run script
+#Similarly, I had to update Makevars file as per last URL, restart R, and run script
 #to get this running with the rstan 2.17.4
 #----------------------------------------------------------------------------------#
+
 #Set your local directory--'trend.stan' must be saved to this directory
 setwd("C:/Users/Chris Cahill/Documents/GitHub/Bayesian-Mark-Recapture-Models/SubmissionRuns/Revision Code")
 
