@@ -12,9 +12,9 @@
 #PLEASE NOTE!!!
 #If stan has never been installed on your machine or you've updated the 
 #version of stan visit https://github.com/stan-dev/rstan/wiki/Installing-RStan-on-Windows
-#and follow the instructions to configure stan on your computer before running script
-#including the "optional configuration" re: the Makevars file to get this running with 
-#rstan 2.17.4
+#and follow the instructions to configure stan on your computer before running script.
+#Make sure this includes the "optional configuration" re: the Makevars file to get this
+#running with rstan 2.17.4
 #----------------------------------------------------------------------------------#
 
 #Set your local directory--'trend.stan' must be saved to this directory
