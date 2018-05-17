@@ -4,14 +4,14 @@
 #See also Kery and Royle 2016 (Applied Hierarchical Modeling), or
 #Royle et al. 2014 (Spatial Capture-Recapture) for BUGS Examples
 
-#Run using R version 3.5.0 (2018-04-23) -- "Joy in Playing" &
+#R version 3.5.0 (2018-04-23) -- "Joy in Playing" &
 #rstanarm (Version 2.17.4, packaged: 2018-04-13 01:51:52 UTC)
 #Coded by Chris Cahill 16 May 2018#
 #Contact: christopher.cahill@ucalgary.ca
 
 #PLEASE NOTE!!!
-#If stan has never been installed on your machine or you've updated the 
-#version of stan visit https://github.com/stan-dev/rstan/wiki/Installing-RStan-on-Windows
+#If stan has never been installed on your machine or you have updated  
+#stan recently visit https://github.com/stan-dev/rstan/wiki/Installing-RStan-on-Windows
 #and follow the instructions to configure stan on your computer before running script.
 #Make sure this includes the "optional configuration" re: the Makevars file to get this
 #running with rstan 2.17.4
