@@ -99,7 +99,7 @@ if(FALSE){
                 verbose = T, pars=trend_pars)
 }
 
-#Step 4: Ensure model is behaving and inspect results (no divergent transitions & Rhat < 1.1):
+#Step 4: Ensure stan is behaving and inspect results (no divergent transitions & Rhat < 1.1):
 
 sampler_params <- get_sampler_params(fit, inc_warmup = FALSE)
 divergent      <- sapply(sampler_params, function(x) max(x[, "divergent__"]))
