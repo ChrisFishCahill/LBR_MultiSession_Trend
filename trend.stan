@@ -62,7 +62,7 @@ model {
   sigma ~ normal(0,1.25); //informative prior for individual heterogeneity
 
   for(i in 1:nyear){
-     sigma_raw[i] ~ normal(0,1); 
+    sigma_raw[i] ~ normal(0,1); 
     for (j in 1:M) { 
       if (s[i,j] > 0) {
         //z[i] == 1 == critter was observed in the field:
