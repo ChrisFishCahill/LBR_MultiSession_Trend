@@ -67,7 +67,7 @@ model {
       if (s[i,j] > 0) {
         //z[i] == 1 == critter was observed in the field:
         target += bernoulli_lpmf(1 | psi[i]) + bernoulli_lpmf(y_array[j, ,i] | p_array[i,j,]);
-      } else { //nind_obs[i]==0
+      } else { 
         vector[2] lp;
         //z[i] == 1 == critter exists (1|psi), but was not observed:
         lp[1] = bernoulli_lpmf(1 | psi[i]) + bernoulli_lpmf(0 | p_array[i,j,]);
