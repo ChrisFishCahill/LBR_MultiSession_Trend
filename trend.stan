@@ -29,11 +29,11 @@ transformed data {
    }
 }
 parameters {
-  matrix<lower=0, upper=1>[nyear,J] mean_p; //detection probs
+  matrix<lower=0, upper=1>[nyear,J] mean_p; 
   real<lower=0> beta0; 
   real beta1; 
-  vector<lower=0>[nyear] sigma; //weakly informative prior 
-  vector [M] sigma_raw[nyear]; //non-centering terms
+  vector<lower=0>[nyear] sigma; 
+  vector [M] sigma_raw[nyear]; 
 }
 transformed parameters {
   matrix[nyear, J] mean_logit_p;
@@ -43,7 +43,7 @@ transformed parameters {
   vector<lower=-16, upper=16> [M] eps[nyear];
 
   for(i in 1:nyear){
-    lambda[i] = exp( beta0 + beta1*( X[i]-X[4] )); //log-linear regression 
+    lambda[i] = exp( beta0 + beta1*( X[i]-X[4] ));  
     psi[i] = lambda[i]/M;  //psi[i] is a derived variable
     eps[i,] = sigma[i]*sigma_raw[i,]; 
     for(j in 1:M){
@@ -59,7 +59,7 @@ model {
   //capture probs[nyear, J] implicitly ~ uniform(0,1) 
   beta0 ~ normal(0,10); 
   beta1 ~ normal(0,1); 
-  sigma ~ normal(0,1.25); //informative prior for individual heterogeneity
+  sigma ~ normal(0,1.25); 
 
   for(i in 1:nyear){
     sigma_raw[i] ~ normal(0,1); 
@@ -82,7 +82,7 @@ model {
 }
 generated quantities {
   //derived quantities:
-  int G_N[nyear];  //Group or Session N
+  int G_N[nyear];  
   vector[nyear] G_N_km; // N / Distance electro-fished
   int<lower=0, upper=1> z_matrix[nyear,M]; 
 
