@@ -6,7 +6,7 @@
 
 #R version 3.5.0 (2018-04-23) -- "Joy in Playing" &
 #rstanarm (Version 2.17.4, packaged: 2018-04-13 01:51:52 UTC)
-#Coded by Chris Cahill 16 May 2018#
+#Coded by Chris L. Cahill 16 May 2018#
 #Contact: christopher.cahill@ucalgary.ca
 
 #PLEASE NOTE!!!
