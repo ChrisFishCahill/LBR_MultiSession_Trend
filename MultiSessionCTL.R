@@ -1,13 +1,9 @@
 #----------------------------------------------------------------------------------#
-#Multi-session Control file as per Cahill et al. Lower Bow River Rainbow Trout CJFAS#
+#Multi-session Control file  
+#Multiple Challenges Confront a High-Effort Inland Rec Fishery Decline CJFAS#
 #Script simulates multi-session data, and then calls stan to analyze trend#
 #See also Kery and Royle 2016 (Applied Hierarchical Modeling), or
 #Royle et al. 2014 (Spatial Capture-Recapture) for BUGS Examples
-
-#R version 3.5.0 (2018-04-23) -- "Joy in Playing" &
-#rstanarm (Version 2.17.4, packaged: 2018-04-13 01:51:52 UTC)
-#Coded by Chris L. Cahill 16 May 2018#
-#Contact: christopher.cahill@ucalgary.ca
 
 #PLEASE NOTE!!!
 #If stan has never been installed on your machine or you have updated  
@@ -15,6 +11,11 @@
 #and follow the instructions to configure stan on your computer before running script.
 #Make sure this includes the "optional configuration" re: the Makevars file to get this
 #running with rstan 2.17.4
+
+#R version 3.5.0 (2018-04-23) -- "Joy in Playing" &
+#rstanarm (Version 2.17.4, packaged: 2018-04-13 01:51:52 UTC)
+#Coded by Chris L. Cahill 16 May 2018#
+#Contact: christopher.cahill@ucalgary.ca
 #----------------------------------------------------------------------------------#
 
 #Set your local directory--'trend.stan' must be saved to this directory
